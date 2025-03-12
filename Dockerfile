@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:23-alpine AS base
 WORKDIR /usr/local/app
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup && chown -R appuser:appgroup /usr/local/app
 USER appuser
